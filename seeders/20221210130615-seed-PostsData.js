@@ -1,0 +1,90 @@
+"use strict";
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.bulkInsert(
+      "PostsData",
+      [
+        {
+          Date: "12 Dec 2022",
+          UserPostId: 1,
+          User: "Jack Bauer",
+          IdeaName: "Community app",
+          OneLiner: "Helping ideas to grow from 0 to 1 through a community",
+          Text: "I have an new idea for social media app but I have no idea how to start or where to begin. Will like to ask the community's advice on my first few steps. Should I get the prototype first or should I talk to users first?",
+          ImgURL: null,
+          VideoURL: null,
+          RequestType: "Ask for comments",
+          NumberFollowers: 20,
+          Tag1: "Social Media",
+          Tag2: "Technology",
+          Tag3: null,
+          Tag4: null,
+          Tag5: null,
+          Tag6: null,
+          Tag7: null,
+          Tag8: null,
+          Tag9: null,
+          Tag10: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          Date: "01 Jun 2021",
+          UserPostId: 4,
+          User: "Beyonce",
+          IdeaName: "Toy with human interaction",
+          OneLiner: "Making your favourite toy a true companion",
+          Text: "Can anyone connect me to a toy enthuenthusiast? Wanted to find out more from him/her on their love of toys",
+          ImgURL: null,
+          VideoURL: "https://youtu.be/EoGUlvhRYpk",
+          RequestType: "Help Needed",
+          NumberFollowers: 4,
+          Tag1: "Toys",
+          Tag2: null,
+          Tag3: null,
+          Tag4: null,
+          Tag5: null,
+          Tag6: null,
+          Tag7: null,
+          Tag8: null,
+          Tag9: null,
+          Tag10: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          Date: "30 Apr 2022",
+          UserPostId: 1,
+          User: "Chuck Norris",
+          IdeaName: "Idea name text text",
+          OneLiner:
+            "One liner text here ... Text text Text text Text text Text text ",
+          Text: "Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text ",
+          ImgURL: null,
+          VideoURL: null,
+          RequestType: "Request Type",
+          NumberFollowers: 109,
+          Tag1: null,
+          Tag2: null,
+          Tag3: null,
+          Tag4: null,
+          Tag5: null,
+          Tag6: null,
+          Tag7: null,
+          Tag8: null,
+          Tag9: null,
+          Tag10: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+  },
+
+  async down(queryInterface, Sequelize) {
+    await queryInterface.bulkDelete("PostsData", null, {});
+  },
+};
