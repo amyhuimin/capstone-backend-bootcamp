@@ -9,6 +9,9 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
+      IdeaId: {
+        type: Sequelize.INTEGER,
+      },
       Date: {
         type: Sequelize.DATE,
       },

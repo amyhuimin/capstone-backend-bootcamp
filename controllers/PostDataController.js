@@ -15,5 +15,14 @@ class PostDataController extends BaseController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
+  async postOne(req, res) {
+    try {
+      return res.json();
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 module.exports = PostDataController;

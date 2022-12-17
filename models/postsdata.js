@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
+      IdeaId: DataTypes.INTEGER,
       Date: DataTypes.DATE,
       UserPostId: DataTypes.INTEGER,
       User: DataTypes.TEXT,
