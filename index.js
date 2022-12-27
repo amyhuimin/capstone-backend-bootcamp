@@ -6,14 +6,14 @@ const PostDataRouter = require("./routers/PostDataRouter.js");
 const imageRouter = require("./routers/imageRouter.js");
 const IdeaRouter = require("./routers/IdeasRouter");
 const userRouter = require("./routers/userRouter");
+const ProgressingIdeasRouter = require("./routers/ProgressingIdeasRouter.js");
 //Import Controllers
 const PostDataController = require("./controllers/PostDataController.js");
 const ProgressingIdeasDataController = require("./controllers/ProgessingIdeasDataController.js");
 //Import Models
 const db = require("./models/index.js");
-const ProgressingIdeasRouter = require("./routers/ProgressingIdeasRouter.js");
 //Unwrap models
-const { PostsData, IdeasData, ProgressingIdea } = db;
+const { PostsData, IdeasData, ProgressingIdeas } = db;
 
 //BackendURL
 const PORT = process.env.PORT;
@@ -29,12 +29,12 @@ const checkJwt = auth({
 //Init Controllers
 const PostsDataCon = new PostDataController(PostsData);
 const ProgressingIdeasDataCon = new ProgressingIdeasDataController(
-  ProgressingIdea
+  ProgressingIdeas
 );
 
 //Init Routers
 const PostDataRoutes = new PostDataRouter(PostsDataCon).routes();
-const IdeaRoutes = new IdeaRouter(IdeaCon).routes();
+//const IdeaRoutes = new IdeaRouter(IdeaCon).routes();
 const ImageRouter = new imageRouter().routes();
 const ProgressingIdeaRouter = new ProgressingIdeasRouter(
   ProgressingIdeasDataCon
