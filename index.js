@@ -8,11 +8,12 @@ const IdeaRouter = require("./routers/IdeasRouter");
 const userRouter = require("./routers/userRouter");
 //Import Controllers
 const PostDataController = require("./controllers/PostDataController.js");
+const ProgressingIdeasDataController = require("./controllers/ProgessingIdeasDataController.js");
 //Import Models
 const db = require("./models/index.js");
 const ProgressingIdeasRouter = require("./routers/ProgressingIdeasRouter.js");
 //Unwrap models
-const { PostsData, IdeasData } = db;
+const { PostsData, IdeasData, ProgressingIdea } = db;
 
 //BackendURL
 const PORT = process.env.PORT;
@@ -27,17 +28,24 @@ const checkJwt = auth({
 
 //Init Controllers
 const PostsDataCon = new PostDataController(PostsData);
+const ProgressingIdeasDataCon = new ProgressingIdeasDataController(
+  ProgressingIdea
+);
 
 //Init Routers
 const PostDataRoutes = new PostDataRouter(PostsDataCon).routes();
 const IdeaRoutes = new IdeaRouter(IdeaCon).routes();
 const ImageRouter = new imageRouter().routes();
+const ProgressingIdeaRouter = new ProgressingIdeasRouter(
+  ProgressingIdeasDataCon
+).routes();
 
 app.use(cors());
 app.use(express.json());
 
 app.use("/", PostDataRoutes);
 app.use("/uploadimage", ImageRouter);
+app.use("/progressingideas", ProgressingIdeaRouter);
 
 app.listen(PORT, () => {
   console.log(`Express app listening on port ${PORT}!`);
