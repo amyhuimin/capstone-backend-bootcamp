@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-class PostDataRouter {
+class IdeasRouter {
   constructor(controller) {
     this.controller = controller;
   }
@@ -13,4 +13,4 @@ class PostDataRouter {
   }
 }
 
-module.exports = PostDataRouter;
+module.exports = IdeasRouter;

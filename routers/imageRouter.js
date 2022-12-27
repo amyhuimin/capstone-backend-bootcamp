@@ -9,10 +9,10 @@ const util = require("util");
 const randomBytes = util.promisify(crypto.randomBytes);
 
 const s3Client = new S3Client({
-  region: process.env.S3_REGION,
+  region: "ap-southeast-1",
   credentials: {
-    accessKeyId: process.env.S3_ACCESSKEYID,
-    secretAccessKey: process.env.S3_SECRETACCESSKEY,
+    accessKeyId: "AKIASDMQVHSXT2ZO2IBR",
+    secretAccessKey: "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",
   },
 });
 
@@ -28,14 +28,14 @@ class imageRouter {
       const imageName = rawBytes.toString("hex");
 
       const params = {
-        Bucket: process.env.S3_BUCKETNAME, // The name of the bucket. For example, 'sample_bucket_101'.
+        Bucket: "imagesbucketp3rocket", // The name of the bucket. For example, 'sample_bucket_101'.
         Key: imageName, // The name of the object. For example, 'sample_upload.txt'.
         Body: req.file.buffer, // The content of the object. For example, 'Hello world!".
       };
       const results = await s3Client.send(new PutObjectCommand(params));
       return res.send({
         res: results,
-        url: `https://${process.env.S3_BUCKETNAME}.s3.amazonaws.com/${imageName}`,
+        url: `https://imagesbucketp3rocket.s3.amazonaws.com/${imageName}`,
       });
     });
     return router;
