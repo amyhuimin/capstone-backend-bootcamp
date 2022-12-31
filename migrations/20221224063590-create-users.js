@@ -20,10 +20,10 @@ module.exports = {
       Ideas: {
         type: Sequelize.INTEGER,
       },
-      Followers: {
+      FollowIdeas: {
         type: Sequelize.INTEGER,
       },
-      Following: {
+      FollowPosts: {
         type: Sequelize.INTEGER,
       },
       createdAt: {
