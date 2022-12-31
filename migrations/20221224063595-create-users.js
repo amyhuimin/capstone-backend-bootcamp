@@ -21,10 +21,10 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       FollowIdeas: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.JSON,
       },
       FollowPosts: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.JSON,
       },
       createdAt: {
         allowNull: false,

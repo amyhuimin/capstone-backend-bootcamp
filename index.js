@@ -10,10 +10,12 @@ const ProgressingIdeasRouter = require("./routers/ProgressingIdeasRouter.js");
 //Import Controllers
 const PostDataController = require("./controllers/PostDataController.js");
 const ProgressingIdeasDataController = require("./controllers/ProgessingIdeasDataController.js");
+const userController = require("./controllers/userController.js");
+const IdeasController = require("./controllers/IdeasController.js");
 //Import Models
 const db = require("./models/index.js");
 //Unwrap models
-const { PostsData, IdeasData, ProgressingIdeas } = db;
+const { PostsData, IdeasData, ProgressingIdeas, Users } = db;
 
 //BackendURL
 const PORT = process.env.PORT;
@@ -28,9 +30,11 @@ const checkJwt = auth({
 
 //Init Controllers
 const PostsDataCon = new PostDataController(PostsData);
+const UserCon = new userController(Users);
 const ProgressingIdeasDataCon = new ProgressingIdeasDataController(
   ProgressingIdeas
 );
+const IdeaCon = new IdeasController(IdeasData);
 
 //Init Routers
 const PostDataRoutes = new PostDataRouter(PostsDataCon).routes();
@@ -39,6 +43,8 @@ const ImageRouter = new imageRouter().routes();
 const ProgressingIdeaRouter = new ProgressingIdeasRouter(
   ProgressingIdeasDataCon
 ).routes();
+const UserRoutes = new userRouter(UserCon, checkJwt).routes();
+const IdeaRoutes = new IdeaRouter(IdeaCon).routes();
 
 app.use(cors());
 app.use(express.json());
@@ -46,6 +52,8 @@ app.use(express.json());
 app.use("/", PostDataRoutes);
 app.use("/uploadimage", ImageRouter);
 app.use("/progressingideas", ProgressingIdeaRouter);
+app.use("/User", UserRoutes);
+app.use("/idea", IdeaRoutes);
 
 app.listen(PORT, () => {
   console.log(`Express app listening on port ${PORT}!`);

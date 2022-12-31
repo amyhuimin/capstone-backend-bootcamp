@@ -22,8 +22,8 @@ module.exports = (sequelize, DataTypes) => {
       UserName: DataTypes.STRING,
       ProfilePicURL: DataTypes.STRING,
       Ideas: DataTypes.INTEGER,
-      FollowIdeas: DataTypes.INTEGER,
-      FollowPosts: DataTypes.INTEGER,
+      FollowIdeas: DataTypes.JSON,
+      FollowPosts: DataTypes.JSON,
     },
     {
       sequelize,

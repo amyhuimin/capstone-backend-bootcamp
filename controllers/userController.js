@@ -27,8 +27,6 @@ class userController extends BaseController {
         UserName: UserName,
         ProfilePicURL: ProfilePicURL,
         Ideas: 0,
-        Followers: 0,
-        Following: 0,
       });
       console.log(newUser);
       return res.json(newUser);
