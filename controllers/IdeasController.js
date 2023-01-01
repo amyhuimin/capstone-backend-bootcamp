@@ -16,6 +16,23 @@ class IdeasController extends BaseController {
     }
   }
 
+  async getOne(req, res) {
+    const { IdeaId } = req.params;
+    try {
+      const idea = await this.model.findByPk(IdeaId, {
+        include: [
+          {
+            model: this.userModel,
+            attributes: ["id"],
+          },
+        ],
+      });
+      return res.json(idea);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
   async postOne(req, res) {
     try {
       const data = req.body;

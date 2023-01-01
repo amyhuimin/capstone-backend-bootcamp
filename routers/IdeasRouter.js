@@ -9,6 +9,12 @@ class IdeasRouter {
     router.get("/", this.controller.getAll.bind(this.controller));
     router.post("/post/", this.controller.postOne.bind(this.controller));
 
+    // router.get("/:IdeaId", this.controller.getOne.bind(this.controller));
+    // router.delete("/:id", this.controller.deleteOne.bind(this.controller));
+    // router.put("/:id", this.controller.updateOne.bind(this.controller));
+    // router.get("/all/all", this.controller.getAllProps.bind(this.controller));
+    
+
     return router;
   }
 }
