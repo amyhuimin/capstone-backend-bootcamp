@@ -27,5 +27,18 @@ class IdeasController extends BaseController {
       return res.status(400).json({ error: true, msg: err });
     }
   }
+
+  async getOne(req, res) {
+    try {
+      const { IdeaId } = req.params;
+      const postResult = await this.model.findOne({
+        where: { id: IdeaId },
+      });
+      return res.json(postResult);
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
 }
 module.exports = IdeasController;

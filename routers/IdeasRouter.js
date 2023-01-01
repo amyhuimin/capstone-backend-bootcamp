@@ -8,6 +8,7 @@ class IdeasRouter {
     // we will insert routes into here later on
     router.get("/", this.controller.getAll.bind(this.controller));
     router.post("/post/", this.controller.postOne.bind(this.controller));
+    router.get("/get/:IdeaId", this.controller.getOne.bind(this.controller));
 
     return router;
   }
