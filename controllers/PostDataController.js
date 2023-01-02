@@ -15,6 +15,19 @@ class PostDataController extends BaseController {
     }
   }
 
+  async getOne(req, res) {
+    try {
+      const { PostId } = req.params;
+      const OnePosts = await this.model.findOne({
+        where: { Id: PostId },
+      });
+      return res.json(OnePosts);
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
   async postOne(req, res) {
     try {
       return res.json();
