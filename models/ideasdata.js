@@ -14,7 +14,11 @@ module.exports = (sequelize, DataTypes) => {
   IdeasData.init(
     {
       IdeaId: DataTypes.INTEGER,
-      UserId: DataTypes.INTEGER,
+      // UserId: DataTypes.INTEGER,
+      UserId: {
+        type: DataTypes.INTEGER,
+        references: { model: "users", key: "id" },
+      },
       IdeaProfileImgURL: DataTypes.TEXT,
       IdeaName: DataTypes.TEXT,
       OneLiner: DataTypes.TEXT,
