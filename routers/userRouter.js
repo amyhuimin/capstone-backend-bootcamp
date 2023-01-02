@@ -8,7 +8,7 @@ class userRouter {
   routes() {
     // we will insert routes into here later on
     router.get(
-      "/:UserEmail",
+      "/:Data",
       this.controller.getOne.bind(this.controller),
       this.auth
     );

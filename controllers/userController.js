@@ -7,11 +7,20 @@ class userController extends BaseController {
 
   async getOne(req, res) {
     try {
-      const { UserEmail } = req.params;
-      const CurrUser = await this.model.findOne({
-        where: { UserEmail: UserEmail },
-      });
-      console.log(CurrUser);
+      const { Data } = req.params;
+      const checkId = parseInt(Data);
+      var CurrUser;
+      if (Number.isNaN(checkId)) {
+        console.log(Data);
+        CurrUser = await this.model.findOne({
+          where: { UserEmail: Data },
+        });
+      } else {
+        console.log(checkId);
+        CurrUser = await this.model.findOne({
+          where: { Id: checkId },
+        });
+      }
       return res.json(CurrUser);
     } catch (err) {
       return res.status(400).json({ data: false });
