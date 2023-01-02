@@ -9,7 +9,18 @@ class IdeasController extends BaseController {
   async getAll(req, res) {
     try {
       const allPosts = await this.model.findAll();
-      console.log(allPosts);
+      return res.json(allPosts);
+    } catch (err) {
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async getUserIdeas(req, res) {
+    try {
+      const { UserId } = req.params;
+      const allPosts = await this.model.findAll({
+        where: { UserId: UserId },
+      });
       return res.json(allPosts);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
@@ -18,9 +29,9 @@ class IdeasController extends BaseController {
 
   async getOne(req, res) {
     const { IdeaId } = req.params;
-    // console.log("this is the idea id" + IdeaId)
     try {
-      const idea = await this.model.findByPk(IdeaId, {
+      const idea = await this.model.findOne({
+        where: { IdeaId: IdeaId },
         include: [
           {
             model: this.userModel,
@@ -28,6 +39,7 @@ class IdeasController extends BaseController {
           },
         ],
       });
+      console.log(idea);
       return res.json(idea);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
@@ -37,23 +49,9 @@ class IdeasController extends BaseController {
   async postOne(req, res) {
     try {
       const data = req.body;
-      console.log(data);
       const postResult = await this.model.create(data);
       return res.json(postResult);
     } catch (err) {
-      return res.status(400).json({ error: true, msg: err });
-    }
-  }
-
-  async getOne(req, res) {
-    try {
-      const { IdeaId } = req.params;
-      const postResult = await this.model.findOne({
-        where: { id: IdeaId },
-      });
-      return res.json(postResult);
-    } catch (err) {
-      console.log(err);
       return res.status(400).json({ error: true, msg: err });
     }
   }

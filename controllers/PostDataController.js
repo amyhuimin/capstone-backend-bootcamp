@@ -10,7 +10,6 @@ class PostDataController extends BaseController {
       const allPosts = await this.model.findAll();
       return res.json(allPosts);
     } catch (err) {
-      console.log(err);
       return res.status(400).json({ error: true, msg: err });
     }
   }
@@ -23,7 +22,6 @@ class PostDataController extends BaseController {
       });
       return res.json(OnePosts);
     } catch (err) {
-      console.log(err);
       return res.status(400).json({ error: true, msg: err });
     }
   }
@@ -32,7 +30,6 @@ class PostDataController extends BaseController {
     try {
       return res.json();
     } catch (err) {
-      console.log(err);
       return res.status(400).json({ error: true, msg: err });
     }
   }

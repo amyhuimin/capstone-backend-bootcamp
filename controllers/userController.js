@@ -1,4 +1,3 @@
-const { INTEGER } = require("sequelize");
 const BaseController = require("./baseController.js");
 
 class userController extends BaseController {
@@ -12,12 +11,10 @@ class userController extends BaseController {
       const checkId = parseInt(Data);
       var CurrUser;
       if (Number.isNaN(checkId)) {
-        console.log(Data);
         CurrUser = await this.model.findOne({
           where: { UserEmail: Data },
         });
       } else {
-        console.log(checkId);
         CurrUser = await this.model.findOne({
           where: { Id: checkId },
         });
@@ -30,9 +27,7 @@ class userController extends BaseController {
 
   async getbyId(req, res) {
     try {
-      console.log("here");
       const { UserId } = req.params;
-      console.log(req);
       const CurrUser = await this.model.findOne({
         where: { Id: UserId },
       });
