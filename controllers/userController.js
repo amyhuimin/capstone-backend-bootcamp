@@ -11,6 +11,7 @@ class userController extends BaseController {
       const checkId = parseInt(Data);
       var CurrUser;
       if (Number.isNaN(checkId)) {
+        console.log(Data)
         CurrUser = await this.model.findOne({
           where: { UserEmail: Data },
         });
