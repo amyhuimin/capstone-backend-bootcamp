@@ -8,7 +8,7 @@ module.exports = {
       [
         {
           IdeaId: 1,
-          UserId: 5,
+          UserId: 2,
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
           IdeaName: "Community app",
@@ -45,7 +45,7 @@ module.exports = {
         },
         {
           IdeaId: 2,
-          UserId: 5,
+          UserId: 3,
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1581557991964-125469da3b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1666&q=80",
           IdeaName: "Toy with human interaction",
@@ -80,36 +80,100 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          IdeaId: 3,
+          IdeaId: 4,
           UserId: 5,
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1668902610778-96403019a7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-          IdeaName: "Idea idea idea idea idea idea idea idea ",
+          IdeaName: "Japanese Mexican Fusion restaurant",
           OneLiner:
-            "Oneliner oneliner oneliner oneliner oneliner oneliner oneliner",
+            "A restaurant serving unique meals which combine the art of Japanese and Mexican cuisine",
           Descr:
-            "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          Purpose:
-            "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+            "My Japanese mum and Mexican dad have always been great cooks and have often tried to combine their recipes to create delicious new ones.",
+          Purpose: "Share my parents' unique recipes with the world",
           Differentator:
-            "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
-          MainFeature:
-            "text text text text text text text text text text text text",
-          OtherFeature:
-            "text text text text text text text text text text text text",
-          TargetAud:
-            "text text text text text text text text text text text text",
-          UsageReason:
-            "text text text text text text text text text text text text",
+            "Not the common JapMex food in Japan where Mexican food is modified for Japanese people's taste. My restaurant will combine them.",
+          MainFeature: "Tacos sushi?",
+          OtherFeature: "Spicy soba noodles",
+          TargetAud: "People interested in trying unique foods",
+          UsageReason: "Foodies!",
           ImgURL:
             "https://images.unsplash.com/photo-1668902610778-96403019a7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-          VideoURL: "https://www.youtube.com/watch?v=-4fyyyQjsz8",
-          Status: "Private",
-          NumberFollowers: null,
+          VideoURL: "https://www.youtube.com/watch?v=GtL1huin9EE",
+          Status: "Live",
+          NumberFollowers: 10,
           Comments: 0,
-          Tag1: "Tag 1",
-          Tag2: "Tag 2",
-          Tag3: "Tag 3",
+          Tag1: "Food",
+          Tag2: "Fusion",
+          Tag3: "International",
+          Tag4: null,
+          Tag5: null,
+          Tag6: null,
+          Tag7: null,
+          Tag8: null,
+          Tag9: null,
+          Tag10: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          IdeaId: 5,
+          UserId: 4,
+          IdeaProfileImgURL:
+            "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
+          IdeaName: "Exercise Tracker App",
+          OneLiner: "An all-in-one exercise tracker",
+          Descr:
+            "Doesn't just track typical exercises like running An app that tracks dancing, yoga and pilates as well.",
+          Purpose: "An app to track all of my exercises",
+          Differentator:
+            "I don't have to use different apps to track different exercises.",
+          MainFeature: "Easy to use",
+          OtherFeature: "Accurate",
+          TargetAud: "Dancers",
+          UsageReason: "Convenience",
+          ImgURL:
+            "https://images.unsplash.com/photo-1668902610778-96403019a7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+          VideoURL: "https://www.youtube.com/watch?v=Ob7vObnFUJc",
+          Status: "Live",
+          NumberFollowers: 50,
+          Comments: 0,
+          Tag1: "Exercise",
+          Tag2: "Tracker",
+          Tag3: null,
+          Tag4: null,
+          Tag5: null,
+          Tag6: null,
+          Tag7: null,
+          Tag8: null,
+          Tag9: null,
+          Tag10: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          IdeaId: 5,
+          UserId: 4,
+          IdeaProfileImgURL:
+            "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
+          IdeaName: "Food Blogging App",
+          OneLiner: "Like instagram but only for food",
+          Descr: "I only want to see food pics.",
+          Purpose: "An app for people to see and view food pics only",
+          Differentator:
+            "It will not have any other photos. Even ads will be related to food and only food.",
+          MainFeature: "Food pictures gallery",
+          OtherFeature: "Recipe sharing?",
+          TargetAud: "Foodies",
+          UsageReason: "Specialised, concentrated",
+          ImgURL:
+            "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg",
+          VideoURL: null,
+          Status: "Private",
+          NumberFollowers: 3,
+          Comments: 0,
+          Tag1: "Food",
+          Tag2: "Technology",
+          Tag3: null,
           Tag4: null,
           Tag5: null,
           Tag6: null,

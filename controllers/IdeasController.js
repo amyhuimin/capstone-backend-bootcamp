@@ -1,8 +1,9 @@
 const BaseController = require("./baseController.js");
 
 class IdeasController extends BaseController {
-  constructor(model) {
+  constructor(model, userModel) {
     super(model);
+    this.userModel = userModel;
   }
 
   async getAll(req, res) {
@@ -11,7 +12,24 @@ class IdeasController extends BaseController {
       console.log(allPosts);
       return res.json(allPosts);
     } catch (err) {
-      console.log(err);
+      return res.status(400).json({ error: true, msg: err });
+    }
+  }
+
+  async getOne(req, res) {
+    const { IdeaId } = req.params;
+    // console.log("this is the idea id" + IdeaId)
+    try {
+      const idea = await this.model.findByPk(IdeaId, {
+        include: [
+          {
+            model: this.userModel,
+            attributes: ["Id"],
+          },
+        ],
+      });
+      return res.json(idea);
+    } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }
   }
@@ -23,7 +41,6 @@ class IdeasController extends BaseController {
       const postResult = await this.model.create(data);
       return res.json(postResult);
     } catch (err) {
-      console.log(err);
       return res.status(400).json({ error: true, msg: err });
     }
   }

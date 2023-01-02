@@ -10,6 +10,10 @@ class IdeasRouter {
     router.post("/post/", this.controller.postOne.bind(this.controller));
     router.get("/get/:IdeaId", this.controller.getOne.bind(this.controller));
 
+    router.get("/get/:IdeaId", this.controller.getOne.bind(this.controller));
+    // router.delete("/:id", this.controller.deleteOne.bind(this.controller));
+    // router.put("/:id", this.controller.updateOne.bind(this.controller));
+    
     return router;
   }
 }

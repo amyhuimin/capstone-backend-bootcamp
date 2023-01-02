@@ -9,12 +9,19 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsTo(models.Users, {
+        foreignKey: "UserId",
+      });
     }
   }
   IdeasData.init(
     {
       IdeaId: DataTypes.INTEGER,
-      UserId: DataTypes.INTEGER,
+      // UserId: DataTypes.INTEGER,
+      UserId: {
+        type: DataTypes.INTEGER,
+        references: { model: "Users", key: "id" },
+      },
       IdeaProfileImgURL: DataTypes.TEXT,
       IdeaName: DataTypes.TEXT,
       OneLiner: DataTypes.TEXT,
