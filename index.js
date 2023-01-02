@@ -34,7 +34,7 @@ const UserCon = new userController(Users);
 const ProgressingIdeasDataCon = new ProgressingIdeasDataController(
   ProgressingIdeas
 );
-const IdeaCon = new IdeasController(IdeasData);
+const IdeaCon = new IdeasController(IdeasData, Users);
 
 //Init Routers
 const PostDataRoutes = new PostDataRouter(PostsDataCon).routes();

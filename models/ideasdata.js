@@ -9,6 +9,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsTo(models.Users, {
+        foreignKey: "UserId",
+      });
     }
   }
   IdeasData.init(
@@ -17,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       // UserId: DataTypes.INTEGER,
       UserId: {
         type: DataTypes.INTEGER,
-        references: { model: "users", key: "id" },
+        references: { model: "Users", key: "id" },
       },
       IdeaProfileImgURL: DataTypes.TEXT,
       IdeaName: DataTypes.TEXT,

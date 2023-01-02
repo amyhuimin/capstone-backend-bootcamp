@@ -2,11 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "password",
-<<<<<<< HEAD
     "database": "capstone-postgres",
-=======
-    "database": "CapstoneBackEndDB",
->>>>>>> 53313b2c21a8d0d2e488080a4d24eccadeb08f0a
     "host": "127.0.0.1",
     "dialect": "postgres",
     "port": "5432"
