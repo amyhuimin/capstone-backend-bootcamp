@@ -1,6 +1,6 @@
 const BaseController = require("./baseController.js");
 
-class userController extends BaseController {
+class UserController extends BaseController {
   constructor(model) {
     super(model);
   }
@@ -11,7 +11,7 @@ class userController extends BaseController {
       const checkId = parseInt(Data);
       var CurrUser;
       if (Number.isNaN(checkId)) {
-        console.log(Data)
+        console.log(Data);
         CurrUser = await this.model.findOne({
           where: { UserEmail: Data },
         });
@@ -73,4 +73,4 @@ class userController extends BaseController {
     }
   }
 }
-module.exports = userController;
+module.exports = UserController;
