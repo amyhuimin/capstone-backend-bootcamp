@@ -26,8 +26,8 @@ module.exports = {
           createdAt: "2021-08-16T23:00:33.010+02:00",
         },
         {
-          PostUUID: 2,
-          PostCommentID: 1,
+          PostId: 2,
+          CommentId: 1,
           UserId: 5,
           User: "Jack Bauer",
           Comment:
@@ -73,6 +73,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("PostsData", null, {});
+    await queryInterface.bulkDelete("CommentsData", null, {});
   },
 };
