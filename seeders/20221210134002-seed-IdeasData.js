@@ -8,7 +8,8 @@ module.exports = {
       [
         {
           IdeaId: 1,
-          UserId: 2,
+          UserId: 5,
+          User: "Jack Bauer",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
           IdeaName: "Community app",
@@ -44,8 +45,9 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          IdeaId: 2,
-          UserId: 3,
+          IdeaId: 1,
+          UserId: 4,
+          User: "Beyonce",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1581557991964-125469da3b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1666&q=80",
           IdeaName: "Toy with human interaction",
@@ -80,8 +82,9 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          IdeaId: 4,
-          UserId: 5,
+          IdeaId: 1,
+          UserId: 3,
+          User: "Justin Trudeau",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1668902610778-96403019a7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
           IdeaName: "Japanese Mexican Fusion restaurant",
@@ -116,8 +119,9 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          IdeaId: 5,
+          IdeaId: 2,
           UserId: 4,
+          User: "Beyonce",
           IdeaProfileImgURL:
             "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
           IdeaName: "Exercise Tracker App",
@@ -139,7 +143,7 @@ module.exports = {
           Comments: 0,
           Tag1: "Exercise",
           Tag2: "Tracker",
-          Tag3: null,
+          Tag3: "Health",
           Tag4: null,
           Tag5: null,
           Tag6: null,
@@ -151,8 +155,9 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          IdeaId: 5,
-          UserId: 4,
+          IdeaId: 1,
+          UserId: 1,
+          User: "Michelle Obama",
           IdeaProfileImgURL:
             "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
           IdeaName: "Food Blogging App",
@@ -174,6 +179,43 @@ module.exports = {
           Tag1: "Food",
           Tag2: "Technology",
           Tag3: null,
+          Tag4: null,
+          Tag5: null,
+          Tag6: null,
+          Tag7: null,
+          Tag8: null,
+          Tag9: null,
+          Tag10: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          IdeaId: 1,
+          UserId: 6,
+          User: "Chuck Norris",
+          IdeaProfileImgURL:
+            "https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80",
+          IdeaName: "American healthy food importing",
+          OneLiner: "Bringing in top of the line healthy food from America",
+          Descr:
+            "America has a big range of healthy food products which is not often seen outside of the US and they are very good products. People around should be able to access to such great products outside of US.",
+          Purpose: "Providing access to quality healthy food",
+          Differentator:
+            "Top of the line food processing capability and farming in US and some of these food is able to provide better health benefits than other healthy food in the market. Food safety will also be a key here",
+          MainFeature: "Food Safety",
+          OtherFeature: "Healthy",
+          TargetAud:
+            "Individuals who enjoys healthy and clean food and patients who can only consume healthy food",
+          UsageReason: "Health purposes",
+          ImgURL:
+            "https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80",
+          VideoURL: "https://www.youtube.com/watch?v=GtL1huin9EE",
+          Status: "Live",
+          NumberFollowers: 10,
+          Comments: 0,
+          Tag1: "Healthy Food",
+          Tag2: "Health",
+          Tag3: "Importing",
           Tag4: null,
           Tag5: null,
           Tag6: null,

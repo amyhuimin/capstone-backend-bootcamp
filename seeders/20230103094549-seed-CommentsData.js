@@ -10,7 +10,7 @@ module.exports = {
           PostId: 1,
           CommentId: 1,
           UserId: 2,
-          User: "JungKook",
+          User: "Lizzie Queen",
           Comment:
             "Wow that's an interesting idea. What you can do now is do a market research if it solves people's pain point",
           createdAt: "2021-08-16T23:00:33.010+02:00",
@@ -18,7 +18,7 @@ module.exports = {
         {
           PostId: 1,
           CommentId: 2,
-          UserId: 2,
+          UserId: 3,
           User: "Justin Trudeau",
           Comment:
             "Also check what are the specific features users are looking for in such a platform",
@@ -39,7 +39,8 @@ module.exports = {
         {
           PostId: 4,
           CommentId: 1,
-          UserId: 2,
+          UserId: 6,
+          User: "Chuck Norris",
           Comment:
             "Sounds exciting! Would love to know how this idea progress. Idea followed!",
 

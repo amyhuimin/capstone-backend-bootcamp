@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("PostsData", {
+    await queryInterface.createTable("IdeasData", {
       Id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,13 +11,6 @@ module.exports = {
       },
       IdeaId: {
         type: Sequelize.INTEGER,
-        references: {
-          model: "IdeasData",
-          key: "IdeaId",
-        },
-      },
-      Date: {
-        type: Sequelize.DATE,
       },
       UserId: {
         type: Sequelize.INTEGER,
@@ -28,22 +21,35 @@ module.exports = {
       },
       User: {
         type: Sequelize.TEXT,
-        references: {
-          model: "Users",
-          key: "UserName",
-        },
+      },
+      IdeaProfileImgURL: {
+        type: Sequelize.TEXT,
       },
       IdeaName: {
         type: Sequelize.TEXT,
-        references: {
-          model: "IdeasData",
-          key: "IdeaName",
-        },
       },
       OneLiner: {
         type: Sequelize.TEXT,
       },
-      Text: {
+      Descr: {
+        type: Sequelize.TEXT,
+      },
+      Purpose: {
+        type: Sequelize.TEXT,
+      },
+      Differentator: {
+        type: Sequelize.TEXT,
+      },
+      MainFeature: {
+        type: Sequelize.TEXT,
+      },
+      OtherFeature: {
+        type: Sequelize.TEXT,
+      },
+      TargetAud: {
+        type: Sequelize.TEXT,
+      },
+      UsageReason: {
         type: Sequelize.TEXT,
       },
       ImgURL: {
@@ -52,10 +58,13 @@ module.exports = {
       VideoURL: {
         type: Sequelize.TEXT,
       },
-      RequestType: {
+      Status: {
         type: Sequelize.TEXT,
       },
       NumberFollowers: {
+        type: Sequelize.INTEGER,
+      },
+      Comments: {
         type: Sequelize.INTEGER,
       },
       Tag1: {
@@ -88,7 +97,6 @@ module.exports = {
       Tag10: {
         type: Sequelize.TEXT,
       },
-
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
@@ -100,6 +108,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("PostsData");
+    await queryInterface.dropTable("IdeasData");
   },
 };

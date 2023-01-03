@@ -1,39 +1,46 @@
 "use strict";
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("ProgressingIdeas", {
+    await queryInterface.createTable("CommentsData", {
       Id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      ImgURL: {
-        type: Sequelize.TEXT,
+      PostId: {
+        type: Sequelize.INTEGER,
         references: {
-          model: "Users",
-          key: "ProfilePicURL",
+          model: "PostsData",
+          key: "Id",
         },
       },
-      IdeaName: {
-        type: Sequelize.TEXT,
+      CommentId: {
+        type: Sequelize.INTEGER,
+      },
+      UserId: {
+        type: Sequelize.INTEGER,
         references: {
           model: "Users",
-          key: "IdeaName",
+          key: "Id",
         },
+      },
+      User: {
+        type: Sequelize.TEXT,
+      },
+      Comment: {
+        type: Sequelize.TEXT,
       },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE,
-      },
     });
   },
+
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("ProgressingIdeas");
+    await queryInterface.dropTable("CommentsData");
   },
 };
