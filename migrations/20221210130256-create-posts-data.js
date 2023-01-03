@@ -11,18 +11,34 @@ module.exports = {
       },
       IdeaId: {
         type: Sequelize.INTEGER,
+        references: {
+          model: "IdeasData",
+          key: "IdeaId",
+        },
       },
       Date: {
         type: Sequelize.DATE,
       },
-      UserPostId: {
+      UserId: {
         type: Sequelize.INTEGER,
+        references: {
+          model: "Users",
+          key: "Id",
+        },
       },
       User: {
         type: Sequelize.TEXT,
+        references: {
+          model: "Users",
+          key: "UserName",
+        },
       },
       IdeaName: {
         type: Sequelize.TEXT,
+        references: {
+          model: "IdeasData",
+          key: "IdeaName",
+        },
       },
       OneLiner: {
         type: Sequelize.TEXT,

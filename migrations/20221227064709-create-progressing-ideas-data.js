@@ -11,9 +11,17 @@ module.exports = {
       },
       ImgURL: {
         type: Sequelize.TEXT,
+        references: {
+          model: "Users",
+          key: "ProfilePicURL",
+        },
       },
       IdeaName: {
         type: Sequelize.TEXT,
+        references: {
+          model: "Users",
+          key: "IdeaName",
+        },
       },
       createdAt: {
         allowNull: false,

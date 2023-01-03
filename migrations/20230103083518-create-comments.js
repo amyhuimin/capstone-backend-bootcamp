@@ -29,6 +29,10 @@ module.exports = {
       },
       User: {
         type: Sequelize.TEXT,
+        references: {
+          model: "Users",
+          key: "UserName",
+        },
       },
       Comment: {
         type: Sequelize.TEXT,
