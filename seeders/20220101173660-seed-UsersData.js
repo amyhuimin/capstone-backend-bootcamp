@@ -9,7 +9,7 @@ module.exports = {
         UserName: "MichelleObama",
         ProfilePicURL:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Michelle_Obama_2013_official_portrait.jpg/1200px-Michelle_Obama_2013_official_portrait.jpg",
-        Ideas: 0,
+        Ideas: 1,
         FollowIdeas: '{"1": "1", "2" : "2"}',
         FollowPosts: '{"2" : "2", "3": "3"}',
         createdAt: new Date(),
@@ -31,7 +31,7 @@ module.exports = {
         UserName: "JustinTrudeau",
         ProfilePicURL:
           "https://www.biography.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkyNzAwNTAyOTEwMjQ3OTY1/justin-trudeau-gettyimages-1242516020.jpg",
-        Ideas: 0,
+        Ideas: 1,
         FollowIdeas: '{"2" : "2", "3": "3"}',
         FollowPosts: '{"1" : "1", "3": "3"}',
         createdAt: new Date(),
@@ -42,7 +42,7 @@ module.exports = {
         UserName: "Beyonce",
         ProfilePicURL:
           "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
-        Ideas: 0,
+        Ideas: 2,
         FollowIdeas: '{"1": "1", "2" : "2", "3": "3"}',
         FollowPosts: '{"1": "1", "2" : "2", "3": "3"}',
         createdAt: new Date(),
@@ -53,7 +53,7 @@ module.exports = {
         UserName: "JackBauer",
         ProfilePicURL:
           "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
-        Ideas: 0,
+        Ideas: 1,
         FollowIdeas: '{"2" : "2", "3": "3"}',
         FollowPosts: '{"1": "1", "3": "3"}',
         createdAt: new Date(),
@@ -64,7 +64,7 @@ module.exports = {
         UserName: "ChuckNorris",
         ProfilePicURL:
           "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
-        Ideas: 0,
+        Ideas: 1,
         FollowIdeas: '{"1": "1", "2" : "2", "3": "3"}',
         FollowPosts: '{"1": "1", "2" : "2", "3": "3"}',
         createdAt: new Date(),
