@@ -19,14 +19,13 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       PostId: DataTypes.INTEGER,
-      PostCommentId: DataTypes.INTEGER,
+      CommentId: DataTypes.INTEGER,
       UserId: {
         type: DataTypes.INTEGER,
-        references: { model: "Users", key: "id" },
       },
       User: DataTypes.TEXT,
       Comment: DataTypes.TEXT,
-      CreatedAt: {
+      createdAt: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: new Date(),

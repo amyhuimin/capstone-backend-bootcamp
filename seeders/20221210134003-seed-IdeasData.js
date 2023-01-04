@@ -9,7 +9,7 @@ module.exports = {
         {
           IdeaId: 1,
           UserId: 5,
-          User: "Jack Bauer",
+          UserName: "Jack Bauer",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
           IdeaName: "Community app",
@@ -47,7 +47,7 @@ module.exports = {
         {
           IdeaId: 1,
           UserId: 4,
-          User: "Beyonce",
+          UserName: "Beyonce",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1581557991964-125469da3b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1666&q=80",
           IdeaName: "Toy with human interaction",
@@ -84,7 +84,7 @@ module.exports = {
         {
           IdeaId: 1,
           UserId: 3,
-          User: "Justin Trudeau",
+          UserName: "Justin Trudeau",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1668902610778-96403019a7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
           IdeaName: "Japanese Mexican Fusion restaurant",
@@ -121,7 +121,7 @@ module.exports = {
         {
           IdeaId: 2,
           UserId: 4,
-          User: "Beyonce",
+          UserName: "Beyonce",
           IdeaProfileImgURL:
             "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
           IdeaName: "Exercise Tracker App",
@@ -157,7 +157,7 @@ module.exports = {
         {
           IdeaId: 1,
           UserId: 1,
-          User: "Michelle Obama",
+          UserName: "Michelle Obama",
           IdeaProfileImgURL:
             "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
           IdeaName: "Food Blogging App",
@@ -192,7 +192,7 @@ module.exports = {
         {
           IdeaId: 1,
           UserId: 6,
-          User: "Chuck Norris",
+          UserName: "Chuck Norris",
           IdeaProfileImgURL:
             "https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80",
           IdeaName: "American healthy food importing",

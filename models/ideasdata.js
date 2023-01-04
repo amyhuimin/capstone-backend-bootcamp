@@ -20,8 +20,9 @@ module.exports = (sequelize, DataTypes) => {
       // UserId: DataTypes.INTEGER,
       UserId: {
         type: DataTypes.INTEGER,
-        references: { model: "Users", key: "id" },
+        references: { model: "Users", key: "Id" },
       },
+      UserName: DataTypes.TEXT,
       IdeaProfileImgURL: DataTypes.TEXT,
       IdeaName: DataTypes.TEXT,
       OneLiner: DataTypes.TEXT,

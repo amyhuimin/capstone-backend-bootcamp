@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       IdeaId: DataTypes.INTEGER,
       Date: DataTypes.DATE,
-      UserPostId: DataTypes.INTEGER,
+      UserId: DataTypes.INTEGER,
       User: DataTypes.TEXT,
       IdeaName: DataTypes.TEXT,
       OneLiner: DataTypes.TEXT,

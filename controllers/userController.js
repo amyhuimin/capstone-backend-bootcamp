@@ -19,7 +19,7 @@ class UserController extends BaseController {
           where: { Id: checkId },
         });
       }
-      return res.json(CurrUser);
+      return res.json(CurrUser), console.log(req.params);
     } catch (err) {
       return res.status(400).json({ data: false });
     }

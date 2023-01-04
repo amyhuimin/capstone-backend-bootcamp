@@ -14,12 +14,12 @@ module.exports = {
       },
       UserId: {
         type: Sequelize.INTEGER,
-        /* references: {
+        references: {
           model: "Users",
           key: "Id",
-        }, */
+        },
       },
-      User: {
+      UserName: {
         type: Sequelize.TEXT,
       },
       IdeaProfileImgURL: {
