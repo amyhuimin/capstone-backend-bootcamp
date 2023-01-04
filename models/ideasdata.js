@@ -16,6 +16,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   IdeasData.init(
     {
+      Id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+      },
       IdeaId: DataTypes.INTEGER,
       // UserId: DataTypes.INTEGER,
       UserId: {
