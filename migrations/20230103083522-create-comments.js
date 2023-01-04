@@ -12,20 +12,20 @@ module.exports = {
       },
       PostId: {
         type: Sequelize.INTEGER,
-        references: {
+        /*   references: {
           model: "PostsData",
           key: "Id",
-        },
+        }, */
       },
       CommentId: {
         type: Sequelize.INTEGER,
       },
       UserId: {
         type: Sequelize.INTEGER,
-        references: {
+        /* references: {
           model: "Users",
           key: "Id",
-        },
+        }, */
       },
       User: {
         type: Sequelize.TEXT,

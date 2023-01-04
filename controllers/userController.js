@@ -31,7 +31,7 @@ class UserController extends BaseController {
       const CurrUser = await this.model.findOne({
         where: { Id: UserId },
       });
-      return res.json(CurrUser);
+      return res.json(CurrUser), console.log(req.params);
     } catch (err) {
       return res.status(400).json({ data: false });
     }
