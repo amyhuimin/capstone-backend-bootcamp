@@ -39,7 +39,6 @@ class IdeasController extends BaseController {
           },
         ],
       });
-      console.log(idea);
       return res.json(idea);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });

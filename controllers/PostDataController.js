@@ -28,7 +28,9 @@ class PostDataController extends BaseController {
 
   async postOne(req, res) {
     try {
-      return res.json();
+      console.log(req.body);
+      const newPost = await this.model.create(req.body);
+      return res.json(newPost);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }

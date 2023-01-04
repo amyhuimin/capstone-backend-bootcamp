@@ -11,7 +11,6 @@ class UserController extends BaseController {
       const checkId = parseInt(Data);
       var CurrUser;
       if (Number.isNaN(checkId)) {
-        console.log(Data);
         CurrUser = await this.model.findOne({
           where: { UserEmail: Data },
         });
@@ -48,7 +47,6 @@ class UserController extends BaseController {
         ProfilePicURL: ProfilePicURL,
         Ideas: 0,
       });
-      console.log(newUser);
       return res.json(newUser);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
@@ -57,7 +55,6 @@ class UserController extends BaseController {
 
   async updateOne(req, res) {
     try {
-      console.log(req.body);
       const { Id, Ideas } = req.body;
       const updatedUser = await this.model.update(
         {
