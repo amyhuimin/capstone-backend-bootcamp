@@ -11,7 +11,7 @@ module.exports = {
           UserId: 5,
           UserName: "Jack Bauer",
           IdeaProfileImgURL:
-            "https://img.freepik.com/premium-photo/square-shaped-collage-diverse-ethnicity-young-people-group-headshots_116547-20475.jpg",
+            "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
           IdeaName: "Community app",
           OneLiner: "Helping ideas to grow from 0 to 1 through a community",
           Descr:
@@ -26,7 +26,7 @@ module.exports = {
           UsageReason:
             "Not knowing how to turn into a business. Helps business to be more human centric",
           ImgURL:
-            "https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg",
+            "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
           VideoURL: "https://www.youtube.com/watch?v=J016xjUYkWI",
           Status: "Live",
           NumberFollowers: 20,
@@ -49,7 +49,7 @@ module.exports = {
           UserId: 4,
           UserName: "Beyonce",
           IdeaProfileImgURL:
-            "https://i5.walmartimages.com/asr/142c9e5c-363f-4621-a32c-af41c10001a0.e9358cca42cedb22a7515f350361a7a6.png",
+            "https://images.unsplash.com/photo-1581557991964-125469da3b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1666&q=80",
           IdeaName: "Toy with human interaction",
           OneLiner: "Making your favourite toy a true companion",
           Descr:
@@ -63,7 +63,7 @@ module.exports = {
           TargetAud: "Toy enthusiast",
           UsageReason: "",
           ImgURL:
-            "https://img.etimg.com/thumb/width-1200,height-900,imgsize-282140,resizemode-1,msid-88403805/news/how-to/why-kids-should-not-have-lots-of-toys-and-what-to-do-if-yours-have-too-many.jpg",
+            "https://images.unsplash.com/photo-1581557991964-125469da3b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1666&q=80",
           VideoURL: "https://www.youtube.com/watch?v=gooDvIP0eAM",
           Status: "Private",
           NumberFollowers: 0,
@@ -123,7 +123,7 @@ module.exports = {
           UserId: 4,
           UserName: "Beyonce",
           IdeaProfileImgURL:
-            "https://static01.nyt.com/images/2017/12/02/well/move/NYT_Strength-Training_Reverse-Lunges_Christine_Final/NYT_Strength-Training_Reverse-Lunges_Christine_Final-square320-v3.jpg",
+            "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
           IdeaName: "Exercise Tracker App",
           OneLiner: "An all-in-one exercise tracker",
           Descr:
@@ -159,7 +159,7 @@ module.exports = {
           UserId: 1,
           UserName: "Michelle Obama",
           IdeaProfileImgURL:
-            "https://www.thesquareclub.com/wp-content/uploads/bfi_thumb/Evoke-Pictures__Square-Club__156-pjhn8bbhgecghiz5rqgm3wdoie2isqo9polyoo8xqk-pjhnkl3moj58295g41f9pvpfb4s429raxsbp17no3w.jpg",
+            "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
           IdeaName: "Food Blogging App",
           OneLiner: "Like instagram but only for food",
           Descr: "I only want to see food pics.",
@@ -171,7 +171,7 @@ module.exports = {
           TargetAud: "Foodies",
           UsageReason: "Specialised, concentrated",
           ImgURL:
-            "https://www.thesquareclub.com/wp-content/uploads/bfi_thumb/Evoke-Pictures__Square-Club__156-pjhn8bbhgecghiz5rqgm3wdoie2isqo9polyoo8xqk-pjhnkl3moj58295g41f9pvpfb4s429raxsbp17no3w.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg",
           VideoURL: null,
           Status: "Private",
           NumberFollowers: 3,
@@ -223,7 +223,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: "2021-03-13T23:00:33.010+02:00",
+          createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
@@ -231,7 +231,7 @@ module.exports = {
           UserId: 6,
           UserName: "Chuck Norris",
           IdeaProfileImgURL:
-            "https://bakeitwithlove.com/wp-content/uploads/2020/08/Panda-Express-Mixed-Vegetables-lg-sq.jpg",
+            "https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80",
           IdeaName: "American healthy food importing",
           OneLiner: "Bringing in top of the line healthy food from America",
           Descr:
