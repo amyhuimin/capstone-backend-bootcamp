@@ -19,9 +19,9 @@ class IdeasController extends BaseController {
     try {
       const { UserId } = req.params;
       const allPosts = await this.model.findAll({
-        where: { UserId: UserId },
+        where: { UserId: parseInt(UserId) },
       });
-      return res.json(allPosts), console.log("here" + req.params);
+      return res.json(allPosts);
     } catch (err) {
       return res.status(400).json({ error: true, msg: err });
     }

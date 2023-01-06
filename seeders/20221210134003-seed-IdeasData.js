@@ -41,7 +41,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2020-08-16T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
         {
@@ -78,7 +78,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2020-09-26T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
         {
@@ -115,7 +115,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2020-12-18T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
         {
@@ -151,7 +151,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2021-01-10T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
         {
@@ -186,7 +186,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2021-02-16T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
         {
@@ -223,7 +223,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2021-03-13T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
         {
@@ -260,7 +260,7 @@ module.exports = {
           Tag8: null,
           Tag9: null,
           Tag10: null,
-          createdAt: new Date(),
+          createdAt: "2021-10-16T23:00:33.010+02:00",
           updatedAt: new Date(),
         },
       ],
