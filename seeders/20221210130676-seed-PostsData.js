@@ -35,7 +35,7 @@ module.exports = {
         {
           Date: "01 Jun 2021",
           UserId: 4,
-          IdeaId: 1,
+          IdeaId: 2,
           User: "Beyonce",
           IdeaName: "Toy with human interaction",
           OneLiner: "Making your favourite toy a true companion",
