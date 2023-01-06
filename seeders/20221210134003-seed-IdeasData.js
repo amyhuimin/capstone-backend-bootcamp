@@ -190,43 +190,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          IdeaId: 2,
-          UserId: 1,
-          UserName: "Michelle Obama",
-          IdeaProfileImgURL:
-            "https://img.freepik.com/premium-vector/happy-female-friends-talking-while-having-coffee_202358-27.jpg",
-          IdeaName: "English Learning app",
-          OneLiner:
-            "An app for non-English speakers to learn pronunciation of English words",
-          Descr:
-            "English phonics is not as straightforward as many other languages. Learners of English may struggle with the different pronunciation of the same letter in different words.",
-          Purpose: "To help non-English speakers learn phonics",
-          Differentator:
-            "It will focus on phonics for European language speakers, instead of speaking or writing.",
-          MainFeature: "Bright, colorful with lots of images",
-          OtherFeature: "Translation?",
-          TargetAud: "Refugees",
-          UsageReason: "Fun, easy-to-use",
-          ImgURL:
-            "https://img.freepik.com/premium-vector/happy-female-friends-talking-while-having-coffee_202358-27.jpg",
-          VideoURL: null,
-          Status: "Private",
-          NumberFollowers: 20,
-          Comments: 0,
-          Tag1: "Language",
-          Tag2: "Technology",
-          Tag3: null,
-          Tag4: null,
-          Tag5: null,
-          Tag6: null,
-          Tag7: null,
-          Tag8: null,
-          Tag9: null,
-          Tag10: null,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
           IdeaId: 1,
           UserId: 6,
           UserName: "Chuck Norris",
